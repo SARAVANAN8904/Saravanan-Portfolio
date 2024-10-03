@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        body {
+            background-color: #f0f8ff;
+            font-family: "Poppins", sans-serif;
+            /* position: relative; */
+            color: black;
+            /* _______________________ Navi ___________________________________________________________________ */
+        }
+        .navi {
+            display: flex;
+            position: sticky;
+            top: 0px;
+            height: 60px;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+
+        }
+
+        ul {
+            display: flex;
+            text-decoration: none;
+            gap: 3em;
+            padding: 0px 60px 0px 0px;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: 400;
+
+        }
+
+        
+        /* ____________________________________________________________Home ______________________________________________________________ */
+        
+        .heading {
+            padding: 0px 0px 0px 80px;
+            font-size: 1.5rem;
+        }
+
+        .name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5%;
+            gap: 100px;
+            margin-top: 7%;
+            margin-left: 8%;
+
+        }
+
+        .name-1 {
+            font-size: 1.5em;
+            font-weight: 100;
+            margin: 0%;
+
+        }
+
+        .front-end {
+            margin-top: 2vh;
+        }
+
+        .contant {
+            margin-top: 2vh;
+            letter-spacing: 2px;
+        }
+
+        .contact-me {
+            padding: 6px;
+            font-weight: bolder;
+            border-radius: 12px;
+            font-size: 1.3rem;
+            margin-top: 5vh;
+            padding: 10px;
+            /* background: linear-gradient(135deg, orange 60%, cyan); */
+            background-color: #003566;
+            border: none;
+            cursor: pointer;
+            color: #ffff;
+        }
+
+        .photo {
+            width: 440px;
+            height: 440px;
+            object-fit: cover;
+            /* position: absolute; */
+            left: 65%;
+            top: 35%;
+            border-radius: 30% 70% 70% 30% /30% 30% 70% 70%;
+        }
+
+        .icons {
+            position: absolute;
+            left: 5%;
+            top: 40%;
+
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            padding: 0px 0px 20px 0px;
+            cursor: pointer;
+        }
+        .scrl{
+            position: absolute;
+            right: 3%;
+            top: 71%;
+            font-size: 15px;
+            font-weight: bolder;
+        }
+        .scroll{
+            width: 35px; height: 35px;
+            position: absolute;
+            right: 9.8%;
+            
+        }
+        /*____________________ ___________________________________Skill page_____________________________________________________ */
+        .skill-card-1 {
+            margin-top: 2%;
+            height: auto;
+            width: auto;
+            border: solid #f0f8ff 2px;
+        }
+
+        .skill-card-2 {
+            width: auto;
+            height: auto;
+            /* border: solid black 2px;  */
+            margin-top: 3%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .skill-title {
+            text-align: center;
+            letter-spacing: 2px;
+            font-size: 55px;
+            margin-top: 7%;
+
+        }
+
+        .skill-card-3 {
+            margin-top: -5%;
+            width: 70vw;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: solid black 2px; */
+            flex-wrap: wrap;
+            padding: 40px;
+            border-radius: 30px;
+            gap: 25px;
+            justify-content: space-evenly;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .skill-card {
+            height: 300px;
+            width: 280px;
+            border-radius: 32px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-top: 2%;
+
+        }
+
+        .skill-img {
+            width: 200px;
+            height: 200px;
+            /* border: solid black 2px; */
+            margin-left: 12%;
+            margin-top: 5%;
+        }
+
+        .skil-name {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 30px;
+        }
+
+        /* _____________________________________ PROJECT ______________________________________________________________________ */
+        .project {
+            width: auto;
+            height: auto;
+            border: solid #edf2f4 2px;
+            padding: 30px;
+        }
+
+        .project-name {
+            margin-top: 3%;
+            text-align: center;
+            letter-spacing: 2px;
+            font-size: 55px;
+            color: #cb997e;
+        }
+
+        .project-card-1 {
+            width: 90vw;
+            height: auto;
+            /* border: black solid 2px; */
+            padding: 40px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 30px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 40px;
+        }
+
+        .project-card-2 {
+            height: 380px;
+            width: 340px;
+            /* border: solid black 2px; */
+            border-radius: 30px;
+            padding: 8px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .project-name-1 {
+            text-align: center;
+            margin-top: 90%;
+        }
+
+        /* ___________________________________________________Contact us_________________________________________________________ */
+        .contact {
+            height: 90vh;
+            width: 90vw;
+            border: solid #edf2f4 3px;
+            border-radius: 20px;
+            margin-left: 5%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+
+        .contact-heading {
+            text-align: center;
+            letter-spacing: 2px;
+            font-size: 55px;
+            color: #f9df94;
+        }
+
+        .contact-card1 {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px;
+        }
+
+        .image-contact {
+            height: auto;
+            width: auto; 
+            border-radius: 40px;
+            /* border: 2px solid #edf2f4 ; */
+            padding: 10px;
+
+        }
+
+        .img-contact {
+            border-radius: 40px;
+            object-fit: cover;
+            margin-top: 7%;
+        }
+
+        .Contact-form {
+            margin-top: 4%;
+            height: 400px;
+            width: 500px;
+            border: solid #edf2f4 ;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            padding: 10px;
+        }
+
+        .namee {
+            font-size: 20px;
+            font-weight: 500;
+            color: rgb(216, 144, 144);
+        }
+        input{
+            width: 90%;
+            padding: 10px;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            background-color: transparent;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        textarea {
+            width: 90%;
+            padding: 10px;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            background-color: transparent;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        input:focus{
+            border-bottom: 2px solid #dda15e;
+        }
+
+          textarea:focus {
+            border-bottom: 2px solid #dda15e;
+        }
+        .form-btn{
+            padding: 6px;
+            font-weight: bolder;
+            border-radius: 12px;
+            font-size: 1.3rem;
+            margin-top: 5vh;
+            padding: 10px;
+            /* background: linear-gradient(135deg, orange 60%, cyan); */
+            background-color: #003566;
+            border: none;
+            cursor: pointer;
+            color: #ffff;
+            margin-left:80%;
+        }
+        fieldset{
+            border: none;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navi">
+        <h3 class="heading">PO<span style="color:#5390d9 ;">R</span>TF<span style="color: #5390d9 ;">O</span>LIO</h3>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#skills">TECHNOLOGY</a></li>
+            <li><a href="#project">PROJECT</a></li>
+            <li><a href="#contact-us">CONTACT US</a></li>
+            <!-- <li><a href="#">ABOUT</a></li> -->
+        </ul>
+    </nav>
+    <div class="name">
+        <div>
+            <div class="name-1">
+                <h1>Hello I'm <span style="color: #5390d9;">Saravanan</span></h1>
+            </div>
+            <div class="front-end">
+                <h2>frontend Developer</h2>
+            </div>
+            <div class="contant">
+                High level experience in web design and development<br> knowlege,producing quality work
+            </div>
+            <a href="Saravanan(Resume).pdf" download="Saravanan CV"><button class="contact-me">Download CV</button></a>
+        </div>
+
+        <div>
+            <img src="Saravana.jpg" class="photo">
+        </div>
+    </div>
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/saravanan-r-69653b268/"><img src="linkedin.png" class="icon"></a><br>
+        <a href="#"><img src="instagram.png" class="icon"></a><br>
+        <a href="#"><img src="github (1).png" class="icon"></a>
+    </div>
+    <div class="scrl">
+    <pre> 
+        s
+        c
+        r
+        o
+        l
+        l   
+    </pre>
+                <img src="arrow.png" class="scroll">        
+    </div>
+    <br><br><br><br>
+    <!-- _______________________________________________Technology Page_____________________________________________________________________- -->
+    <div id="skills" class="skill-card-1">
+        <h1 class="skill-title"><span style="color:#e77a05 ;">Te</span><span style="color: #1003fd;">ch</span><span
+                style="color: #39045c;">no</span><span style="color: #ffd60a;">lo</span><span
+                style="color: #0081a7;">gy</span></h1>
+        <div class="skill-card-2">
+            <div class="skill-card-3">
+                <div class="skill-card">
+                    <img src="html-5.png" class="skill-img">
+                    <h3 class="skil-name"><span style="color: #e77a05;">HTML 5</span></h3>
+                </div>
+                <div class="skill-card">
+                    <img src="css-3.png" class="skill-img">
+                    <h3 class="skil-name"><span style="color: #1003fd;">Css 3</span></h3>
+                </div>
+                <div class="skill-card">
+                    <img src="bootstrap.png" class="skill-img">
+                    <h3 class="skil-name"><span style="color: #39045c;">Bootstrap 5</span></h3>
+                </div>
+                <div class="skill-card">
+                    <img src="js.png" class="skill-img">
+                    <h3 class="skil-name"><span style="color: #ffd60a;">Java</span>script</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="python.png" class="skill-img">
+                    <h3 class="skil-name"><span style=" color:#0081a7">Pyt</span><span
+                            style="color: #f9db48;">hon</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <!-- _________________________________Project____________________________ -->
+    <div class="project" id="project">
+        <h1 class="project-name">Project</h1>
+        <div class="project-card-1">
+            <div class="project-card-2">
+                <img src="">
+                <p></p>
+                <h1 class="project-name-1">Project 1</h1>
+            </div>
+            <div class="project-card-2">
+                <h1 class="project-name-1">Project 2</h1>
+                <img src="">
+                <p></p>
+            </div>
+            <div class="project-card-2">
+                <h1 class="project-name-1">Project 3</h1>
+                <img src="">
+                <p></p>
+            </div>
+            <div class="project-card-2">
+                <h1 class="project-name-1">Project 4</h1>
+                <img src="">
+                <p></p>
+            </div>
+            <div class="project-card-2">
+                <h1 class="project-name-1">Project 5</h1>
+                <img src="">
+                <p></p>
+            </div>
+            <div class="project-card-2">
+                <h1 class="project-name-1">Project 6</h1>
+                <img src="">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <!-- -_____________________________________Contact Us________________________________________ -->
+    <div class="contact" id="contact-us">
+        <h1 class="contact-heading">Contact Us</h1>
+        <div class="contact-card1">
+            <div class="image-contact">
+                <img src="is.jpg" class="img-contact"><br>
+            </div>
+            <div class="Contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <fieldset>
+                        <!-- <legend>Contact Us</legend> -->
+                        <input type="hidden" name="access_key" value="6510b470-2701-4c8c-a367-e6d2ee815cfd">
+                        <div class="namee">
+                            <label class="namee-1">Name : </label><br>
+                            <input type="text" name="name" placeholder="Enter your name">
+                        </div><br>
+                        <div class="namee">
+                            <label class="e-mail-1">e-mail : </label><br>
+                            <input type="email" name="email" placeholder="Enter your e-mail">
+                        </div><br>
+                        <div class="namee">
+                            <label class="message-1">Message</label><br>
+                            <textarea type="text"  name="message" placeholder="Enter your Message"></textarea>
+                        </div>
+                        <button type="Submit" class="form-btn">send</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
